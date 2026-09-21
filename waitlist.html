@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>myhotflashMD is coming.</title>
+<meta name="description" content="Evidence-based menopause care, MD-led. Join the waitlist.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="myhotflashMD is coming.">
+<meta property="og:description" content="Evidence-based menopause care, MD-led. Join the waitlist.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="myhotflashMD is coming.">
+<meta name="twitter:description" content="Evidence-based menopause care, MD-led. Join the waitlist.">
+<meta name="twitter:image" content="assets/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFF9F6;
+    --card:#FFFFFF;
+    --blush:#F6C3CF;
+    --blush-soft:#FBE0E6;
+    --hotpink:#F0268F;
+    --hotpink-deep:#C71678;
+    --slate:#4C6A73;
+    --ink:#2E3B3F;
+    --ink-soft:#5B6C70;
+    --lavender:#B7B4E4;
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --radius-lg:20px;
+    --radius-md:14px;
+    --radius-sm:8px;
+    --max-w:1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+
+  .wrap{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  .icon-link:focus-visible{
+    outline:2px solid var(--hotpink-deep);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    padding:22px 0 10px;
+  }
+  .header-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .logo-img{
+    height:38px;
+    width:auto;
+  }
+  .header-social{
+    display:flex;
+    gap:14px;
+  }
+  .icon-link{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:var(--card);
+    border:1px solid var(--blush);
+    color:var(--hotpink-deep);
+    text-decoration:none;
+    transition:background 0.2s ease, transform 0.2s ease;
+  }
+  .icon-link:hover{
+    background:var(--blush-soft);
+    transform:translateY(-1px);
+  }
+  .icon-link svg{width:17px;height:17px;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:48px 0 12px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    align-items:center;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13.5px;
+    font-weight:500;
+    color:var(--ink-soft);
+    background:var(--blush-soft);
+    padding:8px 16px;
+    border-radius:999px;
+    margin-bottom:22px;
+  }
+  .eyebrow-word{
+    font-weight:600;
+  }
+  .eyebrow-word .ew-my{
+    color:var(--hotpink-deep);
+  }
+  .eyebrow-word .ew-hotflash{
+    font-family:var(--font-display);
+    font-style:italic;
+    font-size:1.15em;
+    color:var(--hotpink);
+    margin:0 1px;
+  }
+  .eyebrow-word .ew-md{
+    color:var(--slate);
+    letter-spacing:0.02em;
+  }
+  .eyebrow .dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--hotpink);
+    animation:pulse 2.2s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:1;}
+    50%{opacity:0.35;}
+  }
+
+  h1{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(2.1rem, 5.2vw, 3.35rem);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    margin:0 0 22px;
+    color:var(--ink);
+  }
+  h1 em{
+    font-style:italic;
+    color:var(--hotpink-deep);
+  }
+
+  .hero-copy p{
+    font-size:1.08rem;
+    color:var(--ink-soft);
+    max-width:52ch;
+    margin:0 0 16px;
+  }
+  .hero-copy p:last-of-type{margin-bottom:26px;}
+
+  .signature{
+    font-family:var(--font-display);
+    font-style:italic;
+    font-size:1.05rem;
+    color:var(--slate);
+    margin:0 0 28px;
+  }
+
+  .credentials{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:18px;
+    margin-top:6px;
+  }
+  .cred-name{
+    font-size:0.95rem;
+    color:var(--ink);
+    font-weight:600;
+  }
+  .cred-sub{
+    font-size:0.88rem;
+    color:var(--ink-soft);
+    font-weight:400;
+  }
+  .badges{
+    display:flex;
+    gap:10px;
+  }
+  .badges img{
+    height:52px;
+    width:auto;
+  }
+
+  .cta-primary{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--hotpink);
+    color:#fff;
+    font-weight:600;
+    font-size:1rem;
+    padding:14px 26px;
+    border-radius:999px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:background 0.2s ease, transform 0.2s ease;
+  }
+  .cta-primary:hover{
+    background:var(--hotpink-deep);
+    transform:translateY(-1px);
+  }
+
+  /* ---------- Photo / glow ---------- */
+  .photo-wrap{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    max-width:230px;
+    margin:0 auto;
+  }
+  .glow{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:0;
+  }
+  .glow::before,
+  .glow::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .glow::before{
+    width:112%;
+    height:112%;
+    background:radial-gradient(circle, rgba(240,38,143,0.16) 0%, rgba(240,38,143,0) 70%);
+  }
+  .glow::after{
+    width:88%;
+    height:88%;
+    background:radial-gradient(circle, rgba(246,195,207,0.55) 0%, rgba(246,195,207,0) 72%);
+  }
+  .photo-frame{
+    position:relative;
+    z-index:1;
+    width:100%;
+    aspect-ratio:4/5;
+    border-radius:22px;
+    overflow:hidden;
+    border:5px solid var(--card);
+    box-shadow:0 14px 30px -16px rgba(76,106,115,0.35);
+  }
+  .photo-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top center;
+  }
+
+  /* ---------- Waitlist ---------- */
+  .waitlist{
+    margin-top:56px;
+    padding:0;
+  }
+  .waitlist-card{
+    background:var(--card);
+    border-radius:var(--radius-lg);
+    padding:clamp(28px, 5vw, 48px);
+    text-align:center;
+    border:1px solid var(--blush);
+  }
+  .waitlist-card h2{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(1.5rem, 3vw, 2rem);
+    margin:0 0 24px;
+    color:var(--ink);
+  }
+  .form-embed{
+    max-width:480px;
+    margin:0 auto;
+    border-radius:var(--radius-md);
+    overflow:hidden;
+    background:var(--cream);
+  }
+  .form-embed iframe{
+    width:100%;
+    height:540px;
+    border:none;
+    display:block;
+  }
+  .form-fallback{
+    margin-top:14px;
+    font-size:0.85rem;
+    color:var(--ink-soft);
+  }
+  .form-fallback a{
+    color:var(--hotpink-deep);
+    font-weight:600;
+    text-decoration:underline;
+  }
+
+  /* ---------- Follow band ---------- */
+  .follow{
+    margin-top:56px;
+    text-align:center;
+  }
+  .follow p.label{
+    font-size:0.9rem;
+    color:var(--ink-soft);
+    margin:0 0 18px;
+  }
+  .follow-links{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .follow-link{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:11px 20px;
+    border-radius:999px;
+    background:var(--card);
+    border:1px solid var(--blush);
+    text-decoration:none;
+    color:var(--ink);
+    font-size:0.92rem;
+    font-weight:600;
+    transition:background 0.2s ease, border-color 0.2s ease;
+  }
+  .follow-link:hover{
+    background:var(--blush-soft);
+    border-color:var(--hotpink);
+  }
+  .follow-link svg{width:16px;height:16px;color:var(--hotpink-deep);}
+  .follow-link.tertiary{
+    font-weight:500;
+    color:var(--ink-soft);
+    opacity:0.85;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    margin-top:70px;
+    padding:32px 0 40px;
+    border-top:1px solid var(--blush);
+  }
+  .footer-row{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    text-align:center;
+  }
+  .footer-logo{
+    height:26px;
+    width:auto;
+    opacity:0.9;
+  }
+  .footer-note{
+    font-family:var(--font-display);
+    font-style:italic;
+    font-size:0.95rem;
+    color:var(--slate);
+    margin:0;
+  }
+  .footer-copy{
+    font-size:0.78rem;
+    color:var(--ink-soft);
+    margin:0;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (min-width: 860px){
+    .hero-grid{
+      grid-template-columns:1.05fr 0.95fr;
+      gap:56px;
+    }
+    .photo-wrap{order:2;max-width:265px;}
+    .hero-copy{order:1;}
+  }
+
+  @media (max-width: 859px){
+    .hero-copy{text-align:left;}
+    .photo-wrap{margin:8px 0 6px;}
+  }
+
+  @media (max-width: 480px){
+    .credentials{flex-direction:column;align-items:flex-start;gap:10px;}
+    .badges img{height:44px;}
+    .cta-primary{width:100%;justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <img class="logo-img" src="assets/logo.png" alt="My Hotflash MD">
+    <div class="header-social">
+      <a class="icon-link" href="https://www.instagram.com/myhotflashmd/" target="_blank" rel="noopener" aria-label="Follow on Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+      <a class="icon-link" href="https://www.tiktok.com/@myhotflashmd" target="_blank" rel="noopener" aria-label="Follow on TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a3 3 0 1 1-2.2-2.9V9.2a6 6 0 1 0 5.2 5.95V8.8a7.3 7.3 0 0 0 4.5 1.55V7.3A4.3 4.3 0 0 1 16.5 2z"/></svg>
+      </a>
+      <a class="icon-link" href="https://www.facebook.com/profile.php/?id=61579436773369" target="_blank" rel="noopener" aria-label="Follow on Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H17V3.7C16.7 3.65 15.7 3.55 14.5 3.55c-2.4 0-4 1.45-4 4.15V10H7.8v3.1h2.7v8h3z"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span><span class="eyebrow-word"><span class="ew-my">my</span><span class="ew-hotflash">hotflash</span><span class="ew-md">MD</span></span> coming soon</span>
+
+        <h1>I believe you can feel like yourself again.</h1>
+
+        <p>Not managed. Not maintained. Actually like yourself &mdash; clear-headed, at home in your body, moving through this phase of life instead of just surviving it.</p>
+
+        <p>I believe care can be a partnership, not a prescription &mdash; where you&rsquo;re truly heard, not just treated, and given the time it actually takes to listen. The best version of you isn&rsquo;t behind you. It&rsquo;s still ahead.</p>
+
+        <p>That&rsquo;s the practice I&rsquo;m building: evidence-based, grounded in partnership, because I don&rsquo;t think &ldquo;good enough&rdquo; should be the ceiling.</p>
+
+        <p class="signature">&mdash; This is my belief. &mdash; Renee Nelson, MD</p>
+
+        <a href="#waitlist" class="cta-primary">
+          Join the waitlist
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+
+        <div class="credentials">
+          <div>
+            <div class="cred-name">Renee Nelson, MD</div>
+            <div class="cred-sub">Menopause Society Certified Practitioner</div>
+          </div>
+          <div class="badges">
+            <img src="assets/badge-mscp.png" alt="Menopause Society Certified Practitioner 2026 badge">
+            <img src="assets/badge-aawh.png" alt="Women's Hormone Therapy Specialist badge">
+          </div>
+        </div>
+      </div>
+
+      <div class="photo-wrap">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="photo-frame">
+          <img src="assets/dr-nelson-hero.jpg" alt="Dr. Renee Nelson, MD, founder of My Hotflash MD">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="waitlist wrap" id="waitlist">
+    <div class="waitlist-card">
+      <h2>You&rsquo;ll hear it from me first.</h2>
+      <div class="form-embed">
+        <iframe
+          src="https://myhotflashmd.myflodesk.com/joinmyhotflashmdwaitlist"
+          title="Join the My Hotflash MD waitlist"
+          loading="lazy">
+        </iframe>
+      </div>
+      <p class="form-fallback">
+        Form not loading? <a href="https://myhotflashmd.myflodesk.com/joinmyhotflashmdwaitlist" target="_blank" rel="noopener">Open the waitlist form directly</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="follow wrap">
+    <p class="label">Follow along while we build</p>
+    <div class="follow-links">
+      <a class="follow-link" href="https://www.instagram.com/myhotflashmd/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        Instagram
+      </a>
+      <a class="follow-link" href="https://www.tiktok.com/@myhotflashmd" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a3 3 0 1 1-2.2-2.9V9.2a6 6 0 1 0 5.2 5.95V8.8a7.3 7.3 0 0 0 4.5 1.55V7.3A4.3 4.3 0 0 1 16.5 2z"/></svg>
+        TikTok
+      </a>
+      <a class="follow-link tertiary" href="https://www.facebook.com/profile.php/?id=61579436773369" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H17V3.7C16.7 3.65 15.7 3.55 14.5 3.55c-2.4 0-4 1.45-4 4.15V10H7.8v3.1h2.7v8h3z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <img class="footer-logo" src="assets/logo.png" alt="My Hotflash MD">
+    <p class="footer-note">We&rsquo;re just getting started.</p>
+    <p class="footer-copy">&copy; 2026 My Hotflash MD. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
